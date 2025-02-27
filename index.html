@@ -3,18 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta
+      name="viewport"
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
+      content="width=device-width, initial-scale=1.0"
     />
     <meta
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
     <title>OATnote</title>
+    <style>
+      html,body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        border: none;
+        resize: none;
+        outline: none;
+        font-size: medium;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
-    <h1>Input something</h1>
-    <input type="text", id = "input text">
+    <textarea id="inputText" placeholder="Input here ..."></textarea>
     <p id="output"></p>
   </body>
 </html>
